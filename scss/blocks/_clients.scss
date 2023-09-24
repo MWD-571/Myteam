@@ -1,0 +1,233 @@
+.clients {
+    background-color: $sacramento_state_green;
+    padding: 140px 0;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        background-image: url('../images/clients__bg.svg');
+        background-repeat: no-repeat;
+    }
+
+    &__container {
+        @include df-column-center;
+        gap: 64px;
+    }
+
+    &__title {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+        color: $white;
+    }
+
+    &__bottom-box {
+        display: flex;
+        gap: 70px;
+    }
+}
+
+@media(max-width:1130px) {
+    .clients {
+        background-color: $sacramento_state_green;
+        padding: 140px 0;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            top: 0px;
+            left: 0;
+            width: 200px;
+            height: 100px;
+            background-image: url('../images/half__clients__bg.svg');
+            background-repeat: no-repeat;
+        }
+
+        &__container {
+            @include df-column-center;
+            gap: 64px;
+        }
+
+        &__title {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            text-align: center;
+            color: $white;
+        }
+
+        &__bottom-box {
+            display: flex;
+            gap: 70px;
+        }
+
+        &__theverge {
+            width: 103px;
+            height: 17px;
+        }
+
+        &__thejakartapost {
+            width: 114px;
+            height: 14px;
+        }
+
+        &__theguardian {
+            width: 112px;
+            height: 17px;
+        }
+
+        &__techradar {
+            width: 103px;
+            height: 17px;
+        }
+
+        &__gadgetsnow {
+            width: 61px;
+            height: 28px;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .clients {
+        background-color: $sacramento_state_green;
+        padding: 100px 0;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            top: 0px;
+            left: 0;
+            width: 200px;
+            height: 100px;
+            background-image: url('../images/half__clients__bg.svg');
+            background-repeat: no-repeat;
+        }
+
+        &__container {
+            @include df-column-center;
+            gap: 48px;
+        }
+
+        &__title {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            color: $white;
+        }
+
+        &__bottom-box {
+            display: flex;
+            gap: 50px;
+        }
+
+        &__theverge {
+            width: 103px;
+            height: 17px;
+        }
+
+        &__thejakartapost {
+            width: 114px;
+            height: 14px;
+        }
+
+        &__theguardian {
+            width: 112px;
+            height: 17px;
+        }
+
+        &__techradar {
+            width: 103px;
+            height: 17px;
+        }
+
+        &__gadgetsnow {
+            width: 61px;
+            height: 28px;
+        }
+    }
+}
+
+@media(max-width:740px) {
+    .clients {
+        background-color: $sacramento_state_green;
+        padding: 88px 0;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            top: 0px;
+            left: -110px;
+            width: 200px;
+            height: 100px;
+            background-image: url('../images/half__clients__bg.svg');
+            background-repeat: no-repeat;
+        }
+
+        &__container {
+            @include df-column-center;
+            gap: 64px;
+        }
+
+        &__title {
+            width: 327px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            color: $white;
+        }
+
+        &__bottom-box {
+            @include df-column-center;
+            gap: 60px;
+        }
+
+        &__theverge {
+            width: 165px;
+            height: 28px;
+        }
+
+        &__thejakartapost {
+            width: 184px;
+            height: 23px;
+        }
+
+        &__theguardian {
+            width: 180px;
+            height: 28px;
+        }
+
+        &__techradar {
+            width: 165px;
+            height: 28px;
+        }
+
+        &__gadgetsnow {
+            width: 98px;
+            height: 45px;
+        }
+    }
+}

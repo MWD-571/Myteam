@@ -1,0 +1,615 @@
+.contact {
+    padding: 50px 0 130px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 200px;
+        top: 80px;
+        left: 0;
+        background-image: url('../images/grey__second-shape.svg');
+        background-repeat: no-repeat;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 226px;
+        bottom: 0px;
+        right: 0;
+        background-image: url('../images/pink__second-shape.svg');
+        background-repeat: no-repeat;
+    }
+
+    &__container {
+        @include df-row-between;
+    }
+
+    &__left-box {
+        @include df-column-starts;
+    }
+
+    &__title {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 100px;
+        color: $white;
+        margin-bottom: 32px;
+    }
+
+    &__mini-title {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+        color: $light_coral;
+        margin-bottom: 32px;
+    }
+
+    &__left-mini-box {
+        @include df-column-starts;
+    }
+
+    &__first-box {
+        @include df-row-center;
+        gap: 23px;
+        margin-bottom: 8px;
+    }
+
+    &__second-mini-titles {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: $white;
+    }
+
+    &__right {
+        width: 542px;
+        @include df-column-starts;
+    }
+
+    &__field {
+        width: 100%;
+        max-width: 555px;
+        height: auto;
+        @include df-column-starts;
+        border-bottom: 1px solid $white;
+        color: $white;
+        opacity: 0.6;
+        mix-blend-mode: normal;
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.115385px;
+        transition: 40ms ease all;
+    }
+
+    input[type="text"] {
+        mix-blend-mode: normal;
+        opacity: 1;
+        width: 540px;
+        border-bottom: 1px solid $white;
+        padding: 24px 0px 17px 14px;
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.115385px;
+        color: $white;
+        mix-blend-mode: normal;
+        transition: 40ms ease all;
+
+        &:focus {
+            transition: 40ms ease all;
+            opacity: 1;
+            color: $white;
+            border-bottom: 1px solid $white;
+        }
+    }
+
+    input[type="email"] {
+        mix-blend-mode: normal;
+        opacity: 1;
+        width: 540px;
+        border-bottom: 1px solid $white;
+        padding: 24px 0px 17px 14px;
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.115385px;
+        color: $white;
+        mix-blend-mode: normal;
+        transition: 40ms ease all;
+
+        &:focus {
+            transition: 40ms ease all;
+            opacity: 1;
+            color: $white;
+            border-bottom: 1px solid $white;
+        }
+    }
+
+    &__message {
+        mix-blend-mode: normal;
+        opacity: 1;
+        width: 540px;
+        border-bottom: 1px solid $white;
+        padding: 24px 0px 28px 14px;
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.115385px;
+        color: $white;
+        mix-blend-mode: normal;
+        transition: 40ms ease all;
+
+        &:focus {
+            transition: 40ms ease all;
+            opacity: 1;
+            color: $white;
+            border-bottom: 1px solid $white;
+        }
+    }
+
+    &__main-btn-box {
+        display: inline-block;
+        margin-top: 30px;
+    }
+
+    &__btn {
+        @include df-column-center;
+        width: 123px;
+        height: 48px;
+        border: 2px solid $white;
+        border-radius: 24px;
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        background-color: $midnight_green;
+        color: $white;
+        transition: 40ms ease all;
+
+        &:active {
+            transition: 40ms ease all;
+            background-color: $white;
+            color: $dark_green;
+        }
+    }
+}
+
+@media(max-width:1150px) {
+    .contact {
+        padding: 180px 0 130px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 100px;
+            height: 200px;
+            top: 200px;
+            left: 0;
+            background-image: url('../images/grey__second-shape.svg');
+            background-repeat: no-repeat;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 100px;
+            height: 226px;
+            bottom: 0px;
+            right: 0;
+            background-image: url('../images/pink__second-shape.svg');
+            background-repeat: no-repeat;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 64px;
+        }
+
+        &__left-box {
+            @include df-column-starts;
+            margin-right: 75px;
+        }
+
+        &__title {
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 100px;
+            color: $white;
+            margin-bottom: 24px;
+        }
+
+        &__mini-title {
+            margin: 0 auto;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 48px;
+            color: $light_coral;
+            margin-bottom: 24px;
+        }
+
+        &__left-mini-box {
+            @include df-column-starts;
+        }
+
+        &__first-box {
+            @include df-row-center;
+            gap: 23px;
+            margin-bottom: 8px;
+        }
+
+        &__second-mini-titles {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            color: $white;
+        }
+
+        &__right {
+            width: 542px;
+            @include df-column-starts;
+        }
+
+        &__field {
+            width: 100%;
+            max-width: 555px;
+            height: auto;
+            @include df-column-starts;
+            border-bottom: 1px solid $white;
+            color: $white;
+            opacity: 0.6;
+            mix-blend-mode: normal;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            transition: 40ms ease all;
+        }
+
+        input[type="text"] {
+            mix-blend-mode: normal;
+            opacity: 1;
+            width: 540px;
+            border-bottom: 1px solid $white;
+            padding: 24px 0px 17px 14px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            color: $white;
+            mix-blend-mode: normal;
+            transition: 40ms ease all;
+
+            &:focus {
+                transition: 40ms ease all;
+                opacity: 1;
+                color: $white;
+                border-bottom: 1px solid $white;
+            }
+        }
+
+        input[type="email"] {
+            mix-blend-mode: normal;
+            opacity: 1;
+            width: 540px;
+            border-bottom: 1px solid $white;
+            padding: 24px 0px 17px 14px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            color: $white;
+            mix-blend-mode: normal;
+            transition: 40ms ease all;
+
+            &:focus {
+                transition: 40ms ease all;
+                opacity: 1;
+                color: $white;
+                border-bottom: 1px solid $white;
+            }
+        }
+
+        &__message {
+            mix-blend-mode: normal;
+            opacity: 1;
+            width: 540px;
+            border-bottom: 1px solid $white;
+            padding: 24px 0px 28px 14px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            color: $white;
+            mix-blend-mode: normal;
+            transition: 40ms ease all;
+
+            &:focus {
+                transition: 40ms ease all;
+                opacity: 1;
+                color: $white;
+                border-bottom: 1px solid $white;
+            }
+        }
+
+        &__main-btn-box {
+            margin-top: 30px;
+            display: inline-block;
+        }
+
+        &__btn {
+            @include df-column-center;
+            width: 123px;
+            height: 48px;
+            border: 2px solid $white;
+            border-radius: 24px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            background-color: $midnight_green;
+            color: $white;
+            transition: 40ms ease all;
+
+            &:active {
+                transition: 40ms ease all;
+                background-color: $white;
+                color: $dark_green;
+            }
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .contact {
+        padding: 180px 0 130px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: none;
+            width: 100px;
+            height: 200px;
+            top: 200px;
+            left: 0;
+            background-image: url('../images/grey__second-shape.svg');
+            background-repeat: no-repeat;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 100px;
+            height: 113px;
+            bottom: 0px;
+            right: 0;
+            background-image: url('../images/pink__half.svg');
+            background-repeat: no-repeat;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 46px;
+        }
+
+        &__left-box {
+            @include df-column-center;
+            margin-right: 0px;
+        }
+
+        &__title {
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 40px;
+            color: $white;
+            margin-bottom: 16px;
+        }
+
+        &__mini-title {
+            margin: 0 auto;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 48px;
+            color: $light_coral;
+            margin-bottom: 40px;
+        }
+
+        &__left-mini-box {
+            @include df-column-center;
+        }
+
+        &__first-box {
+            @include df-row-center;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        &__second-mini-titles {
+            width: 232px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            color: $white;
+        }
+
+        &__right {
+            width: 327px;
+            @include df-column-starts;
+        }
+
+        &__field {
+            width: 100%;
+            max-width: 327px;
+            height: auto;
+            @include df-column-starts;
+            border-bottom: 1px solid $white;
+            color: $white;
+            opacity: 0.6;
+            mix-blend-mode: normal;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            transition: 40ms ease all;
+        }
+
+        input[type="text"] {
+            mix-blend-mode: normal;
+            opacity: 1;
+            width: 315px;
+            border-bottom: 1px solid $white;
+            padding: 24px 0px 17px 14px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            color: $white;
+            mix-blend-mode: normal;
+            transition: 40ms ease all;
+
+            &:focus {
+                transition: 40ms ease all;
+                opacity: 1;
+                color: $white;
+                border-bottom: 1px solid $white;
+            }
+        }
+
+        input[type="email"] {
+            mix-blend-mode: normal;
+            opacity: 1;
+            width: 315px;
+            border-bottom: 1px solid $white;
+            padding: 24px 0px 17px 14px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            color: $white;
+            mix-blend-mode: normal;
+            transition: 40ms ease all;
+
+            &:focus {
+                transition: 40ms ease all;
+                opacity: 1;
+                color: $white;
+                border-bottom: 1px solid $white;
+            }
+        }
+
+        &__message {
+            mix-blend-mode: normal;
+            opacity: 1;
+            width: 315px;
+            border-bottom: 1px solid $white;
+            padding: 24px 0px 28px 14px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.115385px;
+            color: $white;
+            mix-blend-mode: normal;
+            transition: 40ms ease all;
+
+            &:focus {
+                transition: 40ms ease all;
+                opacity: 1;
+                color: $white;
+                border-bottom: 1px solid $white;
+            }
+        }
+
+        &__main-btn-box {
+            margin-top: 30px;
+            width: 123px;
+            height: 48px;
+        }
+
+        &__btn {
+            @include df-column-center;
+            width: 123px;
+            height: 48px;
+            border: 2px solid $white;
+            border-radius: 24px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            background-color: $midnight_green;
+            color: $white;
+            transition: 40ms ease all;
+
+            &:active {
+                transition: 40ms ease all;
+                background-color: $white;
+                color: $dark_green;
+            }
+        }
+    }
+}
